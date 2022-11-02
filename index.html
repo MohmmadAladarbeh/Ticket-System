@@ -11,32 +11,35 @@
 
     <!-- Css Link -->
     <link rel="stylesheet" href="style/main.css">
-
+    
     <!-- Font AWesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    
     <!-- Start Header -->
+    <nav class="navbar">
+        <h1 class="logo">Ticket System</h1>
     
-    <header >
-        <nav class="navbar">
-            <img src="image/logo.png" alt="">
-            <a class="link-item">Home</a>
-            <a class="link-item">Service</a>
-            <a class="link-item">About us</a>
-            <a class="link-item">contact</a>
-        </nav>
+        <ul class="ul">
+            <li><a href="index.html" class="link-item">الرئيسية</a></li>
+            <li><a href="service.html" class="link-item">خدماتي</a></li>
+            <li><a href="about.html" class="link-item">عنا</a></li>
+            <li><a class="link-item">الاتصال بنا</a></li>
+        </ul>
         <div class="button-content">
             <button class="btn-logout">Logout</button>
             <i id="profile" class="fa-solid fa-user"></i>
         </div>
-    </header>
-        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars menu-btn"></i>
+        </label>
+    </nav>
+    
+    
     <!-- End Header -->
-
 
     <!-- Start Main -->
     <section class="main-section">
@@ -54,25 +57,27 @@
             <!-- Steps -->
             <div class="form-step form-step-active">
                 <div class="input-group">
-                    
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">Request</label><br>
-                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="javascript">Problem</label>
+                    <div style="display:inline-block; gap:10px;  ">
+                        <input type="radio" id="request">
+                        <label for="request">Request</label>
+                    </div>
+                    <div class="radio-input" style="display:flex; gap:10px; ">
+                        <input type="radio" id="request">
+                        <label for="request">Request</label>
+                    </div>
                 </div>
-                
                 <div class="">
                     <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
                 </div>
             </div>
             <div class="form-step">
                 <div class="input-group">
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">Hardware</label><br>
-                    <input type="radio" id="css" name="fav_language" value="CSS">
-                    <label for="css">Software</label><br>
-                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                    <label for="javascript">Service</label>
+                    <input type="radio" id="hardware">
+                    <label for="hardware">Hardware</label><br>
+                    <input type="radio" id="software">
+                    <label for="sortware">Software</label><br>
+                    <input type="radio" id="service">
+                    <label for="service">Service</label>
                 </div>
                 <div class="btns-group">
                     <a href="#" class="btn btn-prev">Previous</a>
@@ -109,7 +114,6 @@
         <div class="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-pinterest"></a>
             <a href="#" class="fab fa-linkedin"></a>
             <a href="#" class="fab fa-instagram"></a>
         </div>
@@ -125,8 +129,8 @@
     <!-- Bootstrap Link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-
-    <!-- Js file link -->
-    <script src="js/script.js"></script>
+<!-- Js file link -->
+<script src="js/script.js"></script>
+    
 </body>
 </html>

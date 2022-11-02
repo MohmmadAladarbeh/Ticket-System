@@ -3,6 +3,16 @@ document.querySelector('#profile').onclick = () => {
     window.location.href = 'profile.html';
 }
 
+let element = document.querySelector(".menu-btn");
+let elementUl = document.querySelector(".ul")
+element.onclick = () => {
+
+  if (elementUl.getAttribute('left') === "0")
+    elementUl.setAttribute("left", "-100%");
+  else
+    elementUl.setAttribute("left", "0");
+};
+
 
 const prevBtns = document.querySelectorAll(".btn-prev");
 const nextBtns = document.querySelectorAll(".btn-next");
@@ -51,3 +61,5 @@ function updateProgressbar() {
   progress.style.width =
     ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
+
+
