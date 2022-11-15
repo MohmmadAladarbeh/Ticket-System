@@ -9,10 +9,7 @@
     --footer-padding: 10px 7% 50px 7%;
     --header-footer-color: #13131a;
     --btn-color: beige;
-    --main-section-padding: 100px 7%;
-
-    
-
+    --main-section-padding: 50px 7%;
 }
 .gradient-custom {
     /* fallback for old browsers */
@@ -30,13 +27,12 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: 'El Messiri', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
-body {
-  font-family: 'El Messiri', sans-serif;
-}
+
 
 .special-heading{
     color: #ebeced;
