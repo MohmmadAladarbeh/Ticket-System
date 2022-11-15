@@ -24,12 +24,12 @@
     
         <ul class="ul">
             <li><a href="index.html" class="link-item">الرئيسية</a></li>
-            <li><a href="service.html" class="link-item">خدماتي</a></li>
+            <li><a href="service.html" class="link-item">تذاكري</a></li>
             <li><a href="about.html" class="link-item">عنا</a></li>
             <li><a class="link-item">الاتصال بنا</a></li>
         </ul>
         <div class="button-content">
-            <button class="btn-logout">Logout</button>
+            <button class="btn-logout">تسجيل الخروج</button>
             <i id="profile" class="fa-solid fa-user"></i>
         </div>
         <input type="checkbox" id="check">
@@ -44,13 +44,13 @@
     <!-- Start Main -->
     <section class="main-section">
         <form action="#" class="form" style="margin-top:100px;">
-            <h1 class="text-center">Enter Your Problem</h1>
+            <h1 class="text-center">ما هي مشكلتك ؟</h1>
             <!-- Progress bar -->
             <div class="progressbar">
                 <div class="progress" id="progress"></div>
-                <div class="progress-step progress-step-active" data-title="Type"></div>
-                <div class="progress-step" data-title="Category"></div>
-                <div class="progress-step" data-title="Description"></div>
+                <div class="progress-step progress-step-active" data-title="النوع"></div>
+                <div class="progress-step" data-title="الفئة"></div>
+                <div class="progress-step" data-title="ملاحظات اخرى "></div>
                 <div class="progress-step" data-title=""></div>
             </div>
         
@@ -61,43 +61,43 @@
                     <label class="rad-label">
                         <input type="radio" class="rad-input" name="rad">
                         <div class="rad-design"></div>
-                        <div class="rad-text">Request</div>
+                        <div class="rad-text">هل لديك </div>
                     </label>
                 
                     <label class="rad-label">
                         <input type="radio" class="rad-input" name="rad">
                         <div class="rad-design"></div>
-                        <div class="rad-text">Problem</div>
+                        <div class="rad-text">مشكلة</div>
                     </label>
                 </div>
 
                 <div class="">
-                    <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+                    <a href="#" class="btn btn-next width-50 ml-auto">التالي</a>
                 </div>
             </div>
             <div class="form-step">
                 <div class="input-group">
                     <input type="radio" id="hardware">
-                    <label for="hardware">Hardware</label><br>
+                    <label for="hardware">معدات</label><br>
                     <input type="radio" id="software">
-                    <label for="sortware">Software</label><br>
+                    <label for="sortware">أنظمة وبرامج</label><br>
                     <input type="radio" id="service">
-                    <label for="service">Service</label>
+                    <label for="service">خدمات</label>
                 </div>
                 <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Previous</a>
-                    <a href="#" class="btn btn-next">Next</a>
+                    <a href="#" class="btn btn-prev">السابق</a>
+                    <a href="#" class="btn btn-next">التالي</a>
                 </div>
             </div>
             <div class="form-step">
                 <div class="input-group">
-                    <label for="dob">Other Info</label>
+                    <label for="dob">اذا كانت لديك ملاحظة اكتبها هنا </label>
                     <input type="text" cols="40" rows="5"name="dob" id="dob" />
                 </div>
                 
                 <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Previous</a>
-                    <a href="#" class="btn btn-next">Next</a>
+                    <a href="#" class="btn btn-prev">السابق</a>
+                    <a href="#" class="btn btn-next">التالي</a>
                 </div>
             </div>
             <div class="form-step">
@@ -106,8 +106,8 @@
                 </div>
                 
                 <div class="btns-group">
-                    <a href="#" class="btn btn-prev">Previous</a>
-                    <input type="submit" value="Submit" class="btn" />
+                    <a href="#" class="btn btn-prev">السابق</a>
+                    <input type="submit" value="ارسال" class="btn" />
                 </div>
             </div>
         </form>
