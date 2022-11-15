@@ -78,6 +78,7 @@ html{
   padding: var(--footer-padding);
   position: fixed;
   top:0;
+  z-index: 1;
   
 }
 .logo {
