@@ -43,7 +43,7 @@
 
     <!-- Start Main -->
     <section class="main-section">
-        <form action="#" class="form" style="margin-top:100px;">
+        <form action="#" class="form" style="margin-top:100px; ">
             <h1 class="text-center">ما هي مشكلتك ؟</h1>
             <!-- Progress bar -->
             <div class="progressbar">
@@ -51,48 +51,48 @@
                 <div class="progress-step progress-step-active" data-title="النوع"></div>
                 <div class="progress-step" data-title="الفئة"></div>
                 <div class="progress-step" data-title="ملاحظات اخرى "></div>
-                <div class="progress-step" data-title=""></div>
             </div>
         
             <!-- Steps -->
-            <div class="form-step form-step-active">
+            <div class="form-step form-step-active" >
                 <div>
-                
-                    <label class="rad-label">
-                        <input type="radio" class="rad-input" name="rad">
-                        <div class="rad-design"></div>
-                        <div class="rad-text">هل لديك طلب تريده</div>
-                    </label>
-                
-                    <label class="rad-label">
-                        <input type="radio" class="rad-input" name="rad">
-                        <div class="rad-design"></div>
-                        <div class="rad-text">هل يوجد مشكلة اساعدك بها</div>
-                    </label>
+                <lable class="form-sub-title">حدد نوع التذكرة التي تريد</lable>
+                    <div class="input-group">
+                        <select class="drop-down-list" name="ticket-type" id="ticket-type">
+                            <option value="volvo">اختيار.....</option>
+                            <option value="saab">هل لديك طلب تريده </option>
+                            <option value="opel">هل يوجد مشكلة اساعدك بها</option>
+                        </select>
+                    </div>
                 </div>
-
-                <div class="">
+                <div class="" style="margin-top: 60px;">
                     <a href="#" class="btn btn-next width-50 ml-auto">التالي</a>
                 </div>
             </div>
             <div class="form-step">
+                <lable class="form-sub-title">فئة المشكلة هي </lable>
                 <div class="input-group">
-                    <input type="radio" id="hardware" name="category">
-                    <label for="hardware">معدات</label><br>
-                    <input type="radio" id="software" name="category">
-                    <label for="sortware">أنظمة وبرامج</label><br>
-                    <input type="radio" id="service" name="category">
-                    <label for="service">خدمات</label>
+                    <select class="drop-down-list" name="cars" id="cars">
+                        <option value="volvo">اختيار.....</option>
+                        <option value="saab">معدات</option>
+                        <option value="opel">برمجيات</option>
+                        <option value="audi">خدمات</option>
+                    </select>
                 </div>
-                <div class="btns-group">
+                <div class="btns-group" >
                     <a href="#" class="btn btn-prev">السابق</a>
                     <a href="#" class="btn btn-next">التالي</a>
                 </div>
             </div>
             <div class="form-step">
+                <lable class="form-sub-title">معدات</lable>
                 <div class="input-group">
-                    <label for="dob">اذا كانت لديك ملاحظة اكتبها هنا </label>
-                    <input type="text" cols="40" rows="5"name="dob" id="dob" />
+                    <select class="drop-down-list" name="cars" id="cars">
+                        <option value="volvo">اختيار.....</option>
+                        <option value="saab">حاسوب</option>
+                        <option value="opel">طابعة</option>
+                        <option value="audi">هاتف</option>
+                    </select>
                 </div>
                 
                 <div class="btns-group">
