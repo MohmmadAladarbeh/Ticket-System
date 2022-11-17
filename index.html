@@ -97,35 +97,56 @@
                 
                 <div class="btns-group">
                     <a href="#" class="btn btn-prev">السابق</a>
-                    <a href="#" class="btn btn-next">التالي</a>
-                </div>
-            </div>
-            <div class="form-step">
-                <div class="input-group" style="display:flex; justify-content:space-between;">
-                    <!-- Write Here -->
-                    <div class="group1" >
-                        <p>Full Name</p>
-                        <p>Phone Number</p>
-                        <p>Email</p>
-                        <p>Branche NUmber</p>
-                    </div>
+                    <a href="#" class="btn btn-next"data-bs-toggle="modal" data-bs-target="#myModal">التالي</a>
                     
-                    <div class="group2" style="width: 50%;">
-                        <input type="text" cols="40" rows="5" name="dob" id="dob" placeholder="Ticket Type" style="margin-bottom: 10px;"/>
-                        <input type="text" cols="40" rows="5" name="dob" id="dob" placeholder="Category" style="margin-bottom: 10px;"/>
-                        <input type="text" cols="40" rows="5" name="dob" id="dob" placeholder="Descriptions" style="margin-bottom: 10px;"/>
-                    </div>
-                </div>
-                
-                <div class="btns-group">
-                    <a href="#" class="btn btn-prev">السابق</a>
-                    <input type="submit" value="ارسال" class="btn" />
                 </div>
             </div>
         </form>
+        <div class="container mt-5" >
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            <h5 class="modal-title">معلومات التذكرة</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form style="display:flex; justify-content:space-between;">
+                                <div class="person-info">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="نوع التذكرة">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="الفئة">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="نوع الفئة">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label required">معلومات اخرى</label>
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="ticket-info">
+                                    <p>Name</p>
+                                    <p>Email</p>
+                                    <p>Phone Number</p>
+                                    <p>Branche Number</p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- End Main -->
 
+   
     <!-- Start Footer -->
     <section class="footer" id="contact">
         <div class="share">
